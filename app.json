@@ -1,0 +1,39 @@
+{
+  "name": "TradingApp",
+  "displayName": "TradingApp",
+  "expo": {
+    "name": "TradingApp",
+    "slug": "trading-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icons/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/icons/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0f0c29"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourcompany.tradingapp",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "Esta app necesita acceso al micrófono para reconocimiento de voz"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icons/adaptive-icon.png",
+        "backgroundColor": "#0f0c29"
+      },
+      "permissions": ["android.permission.RECORD_AUDIO"],
+      "package": "com.yourcompany.tradingapp"
+    },
+    "plugins": [
+      [
+        "@react-native-voice/voice",
+        { "microphonePermission": "Esta app necesita acceso al micrófono para reconocimiento de voz" }
+      ]
+    ]
+  }
+}

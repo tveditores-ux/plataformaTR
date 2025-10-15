@@ -1,0 +1,33 @@
+{
+  "name": "trading-app",
+  "version": "1.0.0",
+  "description": "Aplicación móvil de trading con reconocimiento de voz",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-native start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "build:android": "cd android && ./gradlew assembleRelease",
+    "build:ios": "cd ios && xcodebuild -workspace TradingApp.xcworkspace -scheme TradingApp -configuration Release"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-native": "0.72.0",
+    "@react-native-voice/voice": "^4.0.0",
+    "@react-native-async-storage/async-storage": "^1.19.0",
+    "react-native-webview": "^13.2.0",
+    "react-native-svg": "^14.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.0",
+    "@babel/preset-env": "^7.22.0",
+    "@babel/runtime": "^7.22.0",
+    "babel-plugin-module-resolver": "^5.0.0",
+    "metro-react-native-babel-preset": "0.76.0",
+    "react-native-svg-transformer": "^1.1.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}
